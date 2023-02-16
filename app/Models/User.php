@@ -47,4 +47,14 @@ class User extends Authenticatable
     {
         return $this->hasOne(Status::class);
     }
+
+    public function uploads()
+    {
+        return $this->hasOne(Upload::class);
+    }
+
+    public function activities()
+    {
+        return $this->hasMany(Activity::class);
+    }
 }
