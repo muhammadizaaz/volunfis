@@ -19,16 +19,39 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-
-//auth route for admin
-Route::group(['middleware' => ['auth']], function() { 
-    Route::get('/admin',[DashboardController::class,'index'])->name('dashboard');
-    Route::get('/admin/participant_data',[TablesController::class,'index'])->name('participant_data');
+Route::get('/activity-list', function () {
+    return view('activity-list');
 });
 
-// for participants
-Route::group(['middleware' => ['auth', 'role:participant']], function() { 
-    Route::get('/dashboard/myprofile', [DashboardController::class, 'myprofile'])->name('dashboard.myprofile');
+//test route
+
+Route::get('/test', function () {
+    return view('test');
+});
+
+Route::get('/upload-file', function () {
+    return view('student.upload-file');
+});
+
+Route::get('/profile', function () {
+    return view('lecturer.profile');
+});
+
+Route::get('/table', function () {
+    return view('lecturer.applicant');
+});
+
+
+
+
+//auth route for lecturer
+Route::group(['middleware' => ['auth', 'role:lecturer']], function() { 
+    Route::get('/lecturer',[DashboardController::class,'index'])->name('dashboard');
+});
+
+// for student
+Route::group(['middleware' => ['auth', 'role:student']], function() { 
+    Route::get('/student', [DashboardController::class, 'myprofile'])->name('dashboard.myprofile');
 });
 
 require __DIR__.'/auth.php';
