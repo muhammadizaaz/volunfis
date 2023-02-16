@@ -7,7 +7,7 @@
 
             <img src="{{ asset('template') }}/images/users/user-1.jpg" alt="user-img" title="Mat Helme" class="rounded-circle img-thumbnail avatar-md">
                 <div class="dropdown">
-                    <a href="#" class="user-name dropdown-toggle h5 mt-2 mb-1 d-block" data-bs-toggle="dropdown"  aria-expanded="false">Nowak Helme</a>
+                    <a href="#" class="user-name dropdown-toggle h5 mt-2 mb-1 d-block" data-bs-toggle="dropdown"  aria-expanded="false">Shafaa Budi Aulia</a>
                     <div class="dropdown-menu user-pro-dropdown">
 
                         <!-- item-->
@@ -37,21 +37,7 @@
                     </div>
                 </div>
 
-            <p class="text-muted left-user-info">Admin Head</p>
-
-            <ul class="list-inline">
-                <li class="list-inline-item">
-                    <a href="#" class="text-muted left-user-info">
-                        <i class="mdi mdi-cog"></i>
-                    </a>
-                </li>
-
-                <li class="list-inline-item">
-                    <a href="#">
-                        <i class="mdi mdi-power"></i>
-                    </a>
-                </li>
-            </ul>
+            <p class="text-muted left-user-info">1201204035 | S1 Sistem Informasi</p>
         </div>
 
         <!--- Sidemenu -->
@@ -65,7 +51,6 @@
                 <li>
                     <a href="index.html">
                         <i class="mdi mdi-view-dashboard-outline"></i>
-                        <span class="badge bg-success rounded-pill float-end">9+</span>
                         <span> Dashboard </span>
                     </a>
                 </li>

@@ -19,11 +19,39 @@
                 <x-input id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')" required autofocus />
             </div>
 
+            <!-- Username Address -->
+            <div class="mt-4">
+                <x-label for="username" :value="__('Username')" />
+
+                <x-input id="username" class="block mt-1 w-full" type="text" name="username" :value="old('username')" required />
+            </div>
+
             <!-- Email Address -->
             <div class="mt-4">
                 <x-label for="email" :value="__('Email')" />
 
                 <x-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required />
+            </div>
+
+            <!-- NIM Address -->
+            <div class="mt-4">
+                <x-label for="nim" :value="__('NIM')" />
+
+                <x-input id="nim" class="block mt-1 w-full" type="text" name="nim" :value="old('nim/nip')" required />
+            </div>
+
+            <!-- major Address -->
+            <div class="mt-4">
+                <x-label for="major" :value="__('Major')" />
+
+                <x-input id="major" class="block mt-1 w-full" type="text" name="major" :value="old('major')"/>
+            </div>
+
+            <!-- major Address -->
+            <div class="mt-4">
+                <x-label for="number" :value="__('Number')" />
+
+                <x-input id="number" class="block mt-1 w-full" type="text" name="number" :value="old('number')"/>
             </div>
 
             <!-- Password -->

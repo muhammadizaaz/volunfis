@@ -105,7 +105,7 @@ html {
 }
 
 .text-primary {
-  color: #672fed !important;
+  color: #000000 !important;
 }
 
 .text-custom {
@@ -117,7 +117,7 @@ html {
 }
 
 .bg-gradient {
-  background: linear-gradient(to bottom, #3a59af, #352786) !important;
+  background: linear-gradient(to bottom, #414B56, #2a3037) !important;
 }
 
 .font-14 {
@@ -137,13 +137,13 @@ html {
 }
 
 .btn-custom {
-  color: #ffffff !important;
-  background-color: #ff5b5b;
-  border-color: #ff5b5b;
+  color: #000000 !important;
+  background-color: #E7D786;
+  border-color: #E7D786;
 }
 
 .btn-custom:hover, .btn-custom:focus, .btn-custom:active {
-  background-color: #ff4747;
+  background-color: #ffffff;
 }
 
 .title .small-title {
@@ -162,7 +162,7 @@ html {
   text-align: center;
   z-index: 10000;
   border-radius: 3px;
-  background-color: #672fed;
+  background-color: #797979;
   transition: all 0.5s;
 }
 
@@ -238,7 +238,7 @@ html {
 }
 
 .nav-sticky.navbar-custom .navbar-nav .nav-item .nav-link:hover, .nav-sticky.navbar-custom .navbar-nav .nav-item .nav-link.active, .nav-sticky.navbar-custom .navbar-nav .nav-item .nav-link:active {
-  color: #672fed;
+  color: #000000;
 }
 
 /*******************
@@ -298,7 +298,7 @@ html {
 }
 
 .features .nav-pills .nav-item .nav-link.active .tab-icon {
-  color: #ff5d48;
+  color: #E7D786;
 }
 
 .features-tab .nav-item {

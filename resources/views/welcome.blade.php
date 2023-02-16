@@ -1,8 +1,7 @@
 @extends('layouts.landing.master')
 @section('content')
-
     <!-- home start -->
-    <section class="bg-home bg-gradient" id="home">
+    <section class="bg-home bg-gradient" id="about">
         <div class="home-center">
             <div class="home-desc-center">
                 <div class="container-fluid">
@@ -10,11 +9,12 @@
                         <div class="col-lg-6 col-sm-6">
                             <div class="home-title">
                                 <h5 class="mb-3 text-white-50">Discover Volunfis Today</h5>
-                                <h2 class="mb-4 text-white">Make your CV Amazing & Unique with Volunfis</h2>
-                                <p class="text-white-50 home-desc font-16 mb-5">Lorem Ipsum is simply dummy text of the
-                                    printing and typesetting industry. Lorem Ipsum has been the industry's standard
-                                    dummy text ever since the 1500s, when an unknown printer took a galley of type and
-                                    scrambled it to make a type specimen book.</p>
+                                <h2 class="mb-4 text-white">Volunfis</h2>
+                                <p class="text-white-50 home-desc font-16 mb-5">Volunfis is a platform that provides
+                                    information about community service, competition and research for student in Telkom
+                                    University. This platform is a policy from the lecturers of Telkom University to provide
+                                    access for students to experience the opportunity to participate in becoming active and
+                                    outstanding students in off-campus activities.</p>
                                 <div class="watch-video mt-5">
                                     <a href="#" class="btn btn-custom me-4">About Volunfis<i
                                             class="mdi mdi-chevron-right ms-1"></i></a>
@@ -24,7 +24,7 @@
                         </div>
                         <div class="col-lg-5 offset-lg-1 col-sm-6">
                             <div class="home-img mo-mt-20">
-                                <img src="{{ asset('landing') }}/images/home-img.png" alt=""
+                                <img src="{{ asset('landing') }}/images/home-1.png" alt=""
                                     class="img-fluid mx-auto d-block">
                             </div>
                         </div>
@@ -39,21 +39,21 @@
     <!-- home end -->
 
     <!-- features start -->
-    <section class="features" id="features">
+    <section class="features" id="activity">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12">
                     <ul class="nav nav-pills nav-justified features-tab mb-5" id="pills-tab" role="tablist">
                         <li class="nav-item">
-                            <a class="nav-link" id="pills-code-tab" data-bs-toggle="pill" href="#pills-code"
-                                role="tab" aria-controls="pills-code" aria-selected="true">
+                            <a class="nav-link" id="pills-code-tab" data-bs-toggle="pill" href="#pills-code" role="tab"
+                                aria-controls="pills-code" aria-selected="true">
                                 <div class="clearfix">
                                     <div class="features-icon float-end">
                                         <h1><i class="pe-7s-notebook tab-icon"></i></h1>
                                     </div>
                                     <div class="d-none d-lg-block me-4">
                                         <h5 class="tab-title">Community Service</h5>
-                                        <p>At vero eos et accusam et</p>
+                                        <p>Details</p>
                                     </div>
                                 </div>
                             </a>
@@ -68,7 +68,7 @@
                                     </div>
                                     <div class="d-none d-lg-block me-4">
                                         <h5 class="tab-title">Research</h5>
-                                        <p>Sed ut unde iste error sit</p>
+                                        <p>Details</p>
                                     </div>
                                 </div>
                             </a>
@@ -81,7 +81,7 @@
                                 </div>
                                 <div class="d-none d-lg-block me-4">
                                     <h5 class="tab-title">Competition</h5>
-                                    <p>It will be as simple as fact</p>
+                                    <p>Details</p>
                                 </div>
                             </a>
                         </li>
@@ -91,7 +91,7 @@
                             <div class="row align-items-center justify-content-center">
                                 <div class="col-lg-4 col-sm-6">
                                     <div>
-                                        <img src="{{ asset('landing') }}/images/features-img/img-1.png" alt=""
+                                        <img src="{{ asset('landing') }}/images/home-2.png" alt=""
                                             class="img-fluid mx-auto d-block">
                                     </div>
                                 </div>
@@ -102,14 +102,12 @@
                                                 <h1>
                                         </div>
                                         <h5 class="mb-3">Community Service</h5>
-                                        <p class="text-muted">Lorem Ipsum is simply dummy text of the
-                                            printing and typesetting industry. Lorem Ipsum has been the industry's standard
-                                            dummy text ever since the 1500s, when an unknown printer took a galley of type and
-                                            scrambled it to make a type specimen book</p>
-                                        <p class="text-muted">If several languages coalesce the grammar of the
-                                            resulting language </p>
+                                        <p class="text-muted">Community service is unpaid work performed by a person or
+                                            group of people for the benefit and betterment of their community without any
+                                            form of compensation. Community service can be distinct from volunteering, since
+                                            it is not always performed on a voluntary basis and may be compulsory.</p>
                                         <div class="mt-4">
-                                            <a href="#" class="btn btn-custom">Learn More <i
+                                            <a href="#" class="btn btn-custom">Activity List <i
                                                     class="mdi mdi-arrow-right ms-1"></i></a>
                                         </div>
                                     </div>
@@ -124,7 +122,7 @@
                             <div class="row align-items-center justify-content-center">
                                 <div class="col-lg-4 col-sm-6">
                                     <div>
-                                        <img src="{{ asset('landing') }}/images/features-img/img-2.png" alt=""
+                                        <img src="{{ asset('landing') }}/images/home-1.png" alt=""
                                             class="img-fluid mx-auto d-block">
                                     </div>
                                 </div>
@@ -134,14 +132,13 @@
                                             <h1><i class="pe-7s-edit text-primary"></i></h1>
                                         </div>
                                         <h5 class="mb-3">Research</h5>
-                                        <p class="text-muted">Lorem Ipsum is simply dummy text of the
-                                            printing and typesetting industry. Lorem Ipsum has been the industry's standard
-                                            dummy text ever since the 1500s, when an unknown printer took a galley of type and
-                                            scrambled it to make a type specimen bookt</p>
-                                        <p class="text-muted">If several languages coalesce the grammar of the
-                                            resulting language </p>
+                                        <p class="text-muted">Research is defined as the creation of new knowledge and/or
+                                            the use of existing knowledge in a new and creative way so as to generate new
+                                            concepts, methodologies and understandings. This could include synthesis and
+                                            analysis of previous research to the extent that it leads to new and creative
+                                            outcomes.</p>
                                         <div class="mt-4">
-                                            <a href="#" class="btn btn-custom">Learn More <i
+                                            <a href="#" class="btn btn-custom">Activity List<i
                                                     class="mdi mdi-arrow-right ms-1"></i></a>
                                         </div>
                                     </div>
@@ -156,8 +153,8 @@
                             <div class="row align-items-center justify-content-center">
                                 <div class="col-lg-4 col-sm-6">
                                     <div>
-                                        <img src="{{ asset('landing') }}/images/features-img/img-3.png"
-                                            alt="" class="img-fluid mx-auto d-block">
+                                        <img src="{{ asset('landing') }}/images/hero-img.png" alt=""
+                                            class="img-fluid mx-auto d-block">
                                     </div>
                                 </div>
                                 <div class="col-lg-6 offset-lg-1">
@@ -166,14 +163,12 @@
                                             <i class="pe-7s-headphones h1 text-primary"></i>
                                         </div>
                                         <h5 class="mb-3">Competition</h5>
-                                        <p class="text-muted">Lorem Ipsum is simply dummy text of the
-                                            printing and typesetting industry. Lorem Ipsum has been the industry's standard
-                                            dummy text ever since the 1500s, when an unknown printer took a galley of type and
-                                            scrambled it to make a type specimen book.</p>
-                                        <p class="text-muted">If several languages coalesce the grammar of the
-                                            resulting language </p>
+                                        <p class="text-muted">
+                                            Competitions typically challenge students to demonstrate their proficiency in
+                                            academic subjects at a level above that of a typical classroom setting or
+                                            standardized testing.</p>
                                         <div class="mt-4">
-                                            <a href="#" class="btn btn-custom">Learn More <i
+                                            <a href="#" class="btn btn-custom">Activity List<i
                                                     class="mdi mdi-arrow-right ms-1"></i></a>
                                         </div>
                                     </div>
@@ -194,7 +189,7 @@
     <!-- features end -->
 
     <!-- Testimoni start -->
-    <section class="section bg-light" id="clients">
+    <section class="section bg-light" id="testimoni">
         <div class="container-fluid">
             <div class="row justify-content-center">
                 <div class="col-lg-6">
@@ -278,8 +273,7 @@
                             <i class="pe-7s-add-user display-4"></i>
                         </div>
                         <div class="counter-content">
-                            <h2 class="counter_value mb-3 text-white" data-target="1200">0</h2>
-                            <h5 class="counter-name text-white">Fans</h5>
+                            <h5 class="counter-name text-white">Knowledge exploration and abilities in the field.</h5>
                         </div>
                     </div>
                 </div>
@@ -290,9 +284,7 @@
                             <i class="pe-7s-cart display-4"></i>
                         </div>
                         <div class="counter-content">
-                            <h2 class="mb-3 text-white"><span class="counter_value" data-target="1500">10</span> +
-                            </h2>
-                            <h5 class="counter-name text-white">Total Sales</h5>
+                            <h5 class="counter-name text-white">Gain knowledge directly from partners quality.</h5>
                         </div>
                     </div>
                 </div>
@@ -302,8 +294,8 @@
                             <i class="pe-7s-smile display-4"></i>
                         </div>
                         <div class="counter-content">
-                            <h2 class="counter_value mb-3 text-white" data-target="6931">608</h2>
-                            <h5 class="counter-name text-white">Happy Clients</h5>
+                            <h5 class="counter-name text-white">Grab the golden opportunity become a student achievement!
+                            </h5>
                         </div>
                     </div>
                 </div>
@@ -313,8 +305,8 @@
                             <i class="pe-7s-medal display-4"></i>
                         </div>
                         <div class="counter-content">
-                            <h2 class="counter_value mb-3 text-white" data-target="800">2</h2>
-                            <h5 class="counter-name text-white">Won Prices</h5>
+                            <h5 class="counter-name text-white">Adding experience students and improve student concern to
+                                the social environment.</h5>
                         </div>
                     </div>
                 </div>
@@ -325,7 +317,7 @@
     <!-- counter end -->
 
     <!-- contact start -->
-    <section class="section" id="contact">
+    <section class="section" id="faq">
         <div class="container-fluid">
             <div class="row justify-content-center">
                 <div class="col-lg-6">
@@ -344,5 +336,4 @@
         <!-- end container-fluid -->
     </section>
     <!-- contact end -->
-
 @endsection
