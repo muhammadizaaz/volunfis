@@ -20,7 +20,7 @@ Route::get('/', function () {
 });
 
 Route::get('/activity-list', function () {
-    return view('activity-list');
+    return view('activity-list');   
 });
 
 //test route
@@ -39,6 +39,10 @@ Route::get('/profile', function () {
 
 Route::get('/table', function () {
     return view('lecturer.applicant');
+});
+
+Route::get('/dashboard', function () {
+    return view('lecturer.dashboard');
 });
 
 
