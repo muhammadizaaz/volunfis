@@ -21,13 +21,13 @@ Route::get('/', function () {
 
 
 //auth route for admin
-Route::group(['middleware' => ['auth']], function() { 
+Route::group(['middleware' => ['auth', 'role:lecturer']], function() { 
     Route::get('/admin',[DashboardController::class,'index'])->name('dashboard');
     Route::get('/admin/participant_data',[TablesController::class,'index'])->name('participant_data');
 });
 
 // for participants
-Route::group(['middleware' => ['auth', 'role:participant']], function() { 
+Route::group(['middleware' => ['auth', 'role:student']], function() { 
     Route::get('/dashboard/myprofile', [DashboardController::class, 'myprofile'])->name('dashboard.myprofile');
 });
 
