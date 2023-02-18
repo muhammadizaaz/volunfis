@@ -329,8 +329,151 @@
             </div>
             <!-- end row -->
 
-            {{-- disini pertanyaan --}}
+            <div class="row">
+                <div class="card mb-3 col-lg-6">
+                    <div class="card-header" id="headingOne">
+                        <h5 class="m-0 position-relative">
+                            <a class="custom-accordion-title text-reset d-block"
+                                data-bs-toggle="collapse" href="#collapseOne"
+                                aria-expanded="true" aria-controls="collapseOne">
+                                Q. How to join the program? <i
+                                    class="mdi mdi-chevron-down accordion-arrow"></i>
+                            </a>
+                        </h5>
+                    </div>
 
+                    <div id="collapseOne" class="collapse"
+                        aria-labelledby="headingOne"
+                        data-bs-parent="#custom-accordion-one">
+                        <div class="card-body">
+                            Yup, the marketplace license allows you to use this theme
+                            in any end products.
+                            For more information on licenses, please refere <a
+                                href="https://themeforest.net/licenses/standard" target="_blank">here</a>.
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3 col-lg-6">
+                    <div class="card-header" id="headingTwo">
+                        <h5 class="m-0 position-relative">
+                            <a class="custom-accordion-title text-reset collapsed d-block"
+                                data-bs-toggle="collapse" href="#collapseTwo"
+                                aria-expanded="false" aria-controls="collapseTwo">
+                                Q. What is the requirement to join the program? <i
+                                    class="mdi mdi-chevron-down accordion-arrow"></i>
+                            </a>
+                        </h5>
+                    </div>
+                    <div id="collapseTwo" class="collapse"
+                        aria-labelledby="headingTwo"
+                        data-bs-parent="#custom-accordion-one">
+                        <div class="card-body">
+                            No. This is a HTML template. It won't directly with
+                            wordpress, though you can convert this into wordpress
+                            compatible theme
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3 col-lg-6">
+                    <div class="card-header" id="headingThree">
+                        <h5 class="m-0 position-relative">
+                            <a class="custom-accordion-title text-reset collapsed d-block"
+                                data-bs-toggle="collapse" href="#collapseThree"
+                                aria-expanded="false" aria-controls="collapseThree">
+                                Q. What benefit will i get from this program? <i
+                                    class="mdi mdi-chevron-down accordion-arrow"></i>
+                            </a>
+                        </h5>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#custom-accordion-one">
+                        <div class="card-body">
+                            Use our dedicated support email (support@coderthemes.com) to
+                            send your issues or feedback. We are here to help anytime
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3 col-lg-6">
+                    <div class="card-header" id="headingFour">
+                        <h5 class="m-0 position-relative">
+                            <a class="custom-accordion-title text-reset collapsed d-block"
+                                data-bs-toggle="collapse" href="#collapseFour"
+                                aria-expanded="false" aria-controls="collapseFour">
+                                Q. Does this program require a fee? <i
+                                    class="mdi mdi-chevron-down accordion-arrow"></i>
+                            </a>
+                        </h5>
+                    </div>
+                    <div id="collapseFour" class="collapse"
+                        aria-labelledby="headingFour"
+                        data-bs-parent="#custom-accordion-one">
+                        <div class="card-body">
+                            Yes, We will update the Adminto regularly. All the
+                            future updates would be available without any cost
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3 col-lg-6">
+                    <div class="card-header" id="headingFive">
+                        <h5 class="m-0 position-relative">
+                            <a class="custom-accordion-title text-reset collapsed d-block"
+                                data-bs-toggle="collapse" href="#collapseFive"
+                                aria-expanded="false" aria-controls="collapseFive">
+                                Q. How to upload my files? <i
+                                    class="mdi mdi-chevron-down accordion-arrow"></i>
+                            </a>
+                        </h5>
+                    </div>
+                    <div id="collapseFive" class="collapse"
+                        aria-labelledby="headingFive"
+                        data-bs-parent="#custom-accordion-one">
+                        <div class="card-body">
+                            Yes, We will update the Adminto regularly. All the
+                            future updates would be available without any cost
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3 col-lg-6">
+                    <div class="card-header" id="headingSix">
+                        <h5 class="m-0 position-relative">
+                            <a class="custom-accordion-title text-reset collapsed d-block"
+                                data-bs-toggle="collapse" href="#collapseSix"
+                                aria-expanded="false" aria-controls="collapseSix">
+                                Q. How do i see my activity status? <i
+                                    class="mdi mdi-chevron-down accordion-arrow"></i>
+                            </a>
+                        </h5>
+                    </div>
+                    <div id="collapseSix" class="collapse"
+                        aria-labelledby="headingSix"
+                        data-bs-parent="#custom-accordion-one">
+                        <div class="card-body">
+                            Yes, We will update the Adminto regularly. All the
+                            future updates would be available without any cost
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3 col-lg-6">
+                    <div class="card-header" id="headingSeven">
+                        <h5 class="m-0 position-relative">
+                            <a class="custom-accordion-title text-reset collapsed d-block"
+                                data-bs-toggle="collapse" href="#collapseSeven"
+                                aria-expanded="false" aria-controls="collapseSeven">
+                                Q. Can i apply for more than one program? <i
+                                    class="mdi mdi-chevron-down accordion-arrow"></i>
+                            </a>
+                        </h5>
+                    </div>
+                    <div id="collapseSeven" class="collapse"
+                        aria-labelledby="headingSeven"
+                        data-bs-parent="#custom-accordion-one">
+                        <div class="card-body">
+                            Yes, We will update the Adminto regularly. All the
+                            future updates would be available without any cost
+                        </div>
+                    </div>
+                </div>
+            </div>
             <!-- end row -->
         </div>
         <!-- end container-fluid -->
