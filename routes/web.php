@@ -46,8 +46,6 @@ Route::get('/dashboard', function () {
 });
 
 
-
-
 //auth route for lecturer
 Route::group(['middleware' => ['auth', 'role:lecturer']], function() { 
     Route::get('/lecturer',[DashboardController::class,'index'])->name('dashboard');
