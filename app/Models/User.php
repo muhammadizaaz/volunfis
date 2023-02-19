@@ -21,6 +21,9 @@ class User extends Authenticatable
     protected $fillable = [
         'name',
         'email',
+        'nim',
+        'major',
+        'number',
         'password',
     ];
 
@@ -55,6 +58,6 @@ class User extends Authenticatable
 
     public function activities()
     {
-        return $this->hasMany(Activity::class);
+        return $this->belongsToMany(Activity::class);
     }
 }

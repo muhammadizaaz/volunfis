@@ -14,11 +14,9 @@ class CreateUserActivitiesTable extends Migration
     public function up()
     {
         Schema::create('user_activities', function (Blueprint $table) {
-            $table->unsignedBigInteger('user_id');
-            $table->unsignedBigInteger('activity_id');
-
-            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
-            $table->foreign('activity_id')->references('id')->on('activities')->onDelete('cascade');
+            $table->integer('user_id');
+            $table->integer('activity_id');
+            $table->primary(['user_id', 'activity_id']);
         });
     }
 

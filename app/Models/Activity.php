@@ -14,16 +14,15 @@ class Activity extends Model
         'description',
         'veneu',
         'company',
+        'category_id',
         'photo',
         'date_start',
         'date_end',
-        'user_id',
-        'category_id',
     ];
 
     public function user()
     {
-        return $this->belongsTo(User::class);
+        return $this->hasMany(User::class);
     }
 
     public function category()

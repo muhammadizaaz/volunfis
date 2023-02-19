@@ -15,7 +15,7 @@
                         <div class="row">
                             <div class="col-sm-6">
                                 <div class="card card-body">
-                                    <h4 class="card-title">Welcome, Farras</h4>
+                                    <h4 class="card-title">Welcome, {{ auth()->user()->name }}</h4>
                                 </div>
                             </div>
                         </div>

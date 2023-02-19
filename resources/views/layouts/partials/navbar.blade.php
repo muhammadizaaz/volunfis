@@ -10,7 +10,7 @@
                             <i class="fe-search"></i>
                         </button>
                     </div>
-                    <div class="dropdown-menu dropdown-lg" id="search-dropdown">
+                    {{-- <div class="dropdown-menu dropdown-lg" id="search-dropdown">
                         <!-- item-->
                         <div class="dropdown-header noti-title">
                             <h5 class="text-overflow mb-2">Found 22 results</h5>
@@ -38,7 +38,7 @@
                         <div class="dropdown-header noti-title">
                             <h6 class="text-overflow mb-2 text-uppercase">Users</h6>
                         </div>
-                    </div> 
+                    </div>  --}}
                 </div>
             </form>
         </li>
@@ -58,13 +58,13 @@
             <a class="nav-link dropdown-toggle nav-user me-0 waves-effect waves-light" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
                 <img src="{{ asset('template') }}/images/users/user-1.jpg" alt="user-image" class="rounded-circle">
                 <span class="pro-user-name ms-1">
-                    Shafaa <i class="mdi mdi-chevron-down"></i> 
+                    {{ auth()->user()->name }} <i class="mdi mdi-chevron-down"></i> 
                 </span>
             </a>
             <div class="dropdown-menu dropdown-menu-end profile-dropdown ">
                 <!-- item-->
                 <div class="dropdown-header noti-title">
-                    <h6 class="text-overflow m-0">Welcome !</h6>
+                    <h6 class="text-overflow m-0">Welcome, {{ auth()->user()->name }} !</h6>
                 </div>
 
                 <!-- item-->

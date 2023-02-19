@@ -10,12 +10,12 @@ class ActivityController extends Controller
     public function index()
     {
         $activities = Activity::latest()->paginate(5);
-        return view('activities.index', compact('activities'));
+        return view('lecturer.activities.index', compact('activities'));
     }
 
     public function create()
     {
-        return view('activities.create');
+        return view('lecturer.activities.create');
     }
 
     public function store(Request $request)
@@ -25,16 +25,15 @@ class ActivityController extends Controller
             'description' => 'required',
             'veneu' => 'required',
             'company' => 'required',
-            'photo' => 'required',
+            'photo' => 'nullable',
+            'category_id' => 'required',
             'date_start' => 'required',
             'date_end' => 'required',
-            'user_id' => 'required',
-            'category_id' => 'required',
         ]);
 
         Activity::create($request->all());
 
-        return redirect()->route('lecturer.my-activity')
+        return redirect()->route('lecturer.activities.index')
             ->with('success', 'Activity created successfully.');
     }
 
@@ -46,15 +45,14 @@ class ActivityController extends Controller
             'veneu' => 'required',
             'company' => 'required',
             'photo' => 'required',
+            'category_id' => 'required',
             'date_start' => 'required',
             'date_end' => 'required',
-            'user_id' => 'required',
-            'category_id' => 'required',
         ]);
 
         $activity->update($request->all());
 
-        return redirect()->route('lecturer.my-activity')
+        return redirect()->route('lecturer.activities.index')
             ->with('success', 'Activity updated successfully');
     }
 
@@ -62,7 +60,7 @@ class ActivityController extends Controller
     {
         $activity->delete();
 
-        return redirect()->route('lecturer.my-activity')
+        return redirect()->route('lecturer.activities.index')
             ->with('success', 'Activity deleted successfully');
     }
 

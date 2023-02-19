@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\ActivityController;
+use App\Http\Controllers\Auth\RegisteredUserController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\TablesController;
 use Illuminate\Support\Facades\Route;
@@ -48,12 +50,23 @@ Route::get('/dashboard', function () {
 
 //auth route for lecturer
 Route::group(['middleware' => ['auth', 'role:lecturer']], function() { 
-    Route::get('/lecturer',[DashboardController::class,'index'])->name('dashboard');
+    Route::get('/lecturer/dashboard',[DashboardController::class,'index'])->name('lecturer.dashboard');
+    Route::get('/lecturer/profile',[DashboardController::class,'edit'])->name('lecturer.profile');
+    Route::put('/lecturer/profile',[DashboardController::class,'update'])->name('lecturer.profile.update');
+    
+    //activity
+    Route::get('/lecturer/my-activity',[ActivityController::class,'index'])->name('lecturer.my-activity');
+    Route::get('/lecturer/my-activity/create',[ActivityController::class,'create'])->name('lecturer.my-activity.create');
+    Route::post('/lecturer/my-activity',[ActivityController::class,'store'])->name('lecturer.my-activity.store');
+    Route::get('/lecturer/my-activity/{id}/edit',[ActivityController::class,'edit'])->name('lecturer.my-activity.edit');
+    Route::put('/lecturer/my-activity/{id}',[ActivityController::class,'update'])->name('lecturer.my-activity.update');
+    Route::delete('/lecturer/my-activity/{id}',[ActivityController::class,'destroy'])->name('lecturer.my-activity.destroy');
 });
 
 // for student
 Route::group(['middleware' => ['auth', 'role:student']], function() { 
-    Route::get('/student', [DashboardController::class, 'myprofile'])->name('dashboard.myprofile');
+    Route::get('/student/dashboard', [DashboardController::class, 'index'])->name('student.dashboard');
+    Route::get('/student/profile',[DashboardController::class,'profile'])->name('student.profile');
 });
 
 require __DIR__.'/auth.php';
