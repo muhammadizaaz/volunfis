@@ -33,12 +33,12 @@
                                     <div class="mb-3">
                                         <label for="validationCustom04" class="form-label">Company</label>
                                         <input type="text" class="form-control" id="validationCustom04"
-                                            placeholder="Company" required />
+                                            placeholder="Company" name="company" required />
                                     </div>
                                     <div class="mb-3">
                                         <label for="validationCustom04" class="form-label">Photo</label>
                                         <input type="file" class="form-control" id="validationCustom04"
-                                        data-plugins="dropify" placeholder="add here"/>
+                                        data-plugins="dropify" name="photo" placeholder="add here"/>
                                     </div>
                                     <div class="mb-3">
                                         <label for="validationCustom05" class="form-label">Category</label>

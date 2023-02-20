@@ -19,7 +19,7 @@ class CreateActivitiesTable extends Migration
             $table->text('description');
             $table->string('veneu');
             $table->string('company');
-            $table->string('photo');
+            $table->string('photo')->nullable();
             $table->unsignedInteger('category_id');
             $table->date('date_start');
             $table->date('date_end');
