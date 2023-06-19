@@ -4,6 +4,7 @@ use App\Http\Controllers\ActivityController;
 use App\Http\Controllers\Auth\RegisteredUserController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\TablesController;
+use App\Http\Controllers\UploadController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -61,12 +62,28 @@ Route::group(['middleware' => ['auth', 'role:lecturer']], function() {
     Route::get('/lecturer/my-activity/{id}/edit',[ActivityController::class,'edit'])->name('lecturer.my-activity.edit');
     Route::put('/lecturer/my-activity/{id}',[ActivityController::class,'update'])->name('lecturer.my-activity.update');
     Route::delete('/lecturer/my-activity/{id}',[ActivityController::class,'destroy'])->name('lecturer.my-activity.destroy');
+
+    //applicant
+    Route::get('/lecturer/applicant', function () {
+        return view('lecturer.applicant');
+    });
+
 });
 
 // for student
 Route::group(['middleware' => ['auth', 'role:student']], function() { 
     Route::get('/student/dashboard', [DashboardController::class, 'index'])->name('student.dashboard');
-    Route::get('/student/profile',[DashboardController::class,'profile'])->name('student.profile');
+    Route::get('/student/profile',[DashboardController::class,'edit'])->name('student.profile');
+    Route::put('/student/profile',[DashboardController::class,'update'])->name('student.profile.update');
+    
+    //activity
+    Route::get('/student/my-activity',[ActivityController::class,'index'])->name('student.my-activity');
+
+
+    //student upload file
+    Route::get('/student/upload-file',[UploadController::class,'create'])->name('student.upload-file');
+    Route::post('/student/upload-file',[UploadController::class,'store'])->name('student.upload-file.store');
+    
 });
 
 require __DIR__.'/auth.php';

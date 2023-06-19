@@ -17,7 +17,6 @@
                             <p class="sub-header">
                                 Override your input files with style. Your so fresh input file — Default version.
                             </p>
-
                             <input type="file" data-plugins="dropify" data-height="300" />
 
                         </div> <!-- end card-body-->

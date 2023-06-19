@@ -41,23 +41,6 @@
         </div>
 
         <!--- Sidemenu -->
-        @guest
-        <div id="sidebar-menu">
-
-            <ul id="side-menu">
-
-                <li class="menu-title">Navigation</li>
-    
-                <li>
-                    <a href="index.html">
-                        <i class="mdi mdi-view-dashboard-outline"></i>
-                        <span> Dashboard </span>
-                    </a>
-                </li>
-            </ul>
-        </div>
-        @endguest
-
         @auth
             @role('lecturer')
             <div id="sidebar-menu">
@@ -90,7 +73,7 @@
                     </li>
     
                     <li>
-                        <a href="apps-chat.html">
+                        <a href="/lecturer/applicant">
                             <i class="mdi mdi-forum-outline"></i>
                             <span> Applicant </span>
                         </a>
@@ -116,23 +99,16 @@
                     <li class="menu-title mt-2">Features</li>
     
                     <li>
-                        <a href="apps-calendar.html">
+                        <a href="{{ route('student.profile') }}">
                             <i class="mdi mdi-calendar-blank-outline"></i>
                             <span> My Profile </span>
                         </a>
                     </li>
     
                     <li>
-                        <a href="apps-chat.html">
+                        <a href="{{ route('student.my-activity') }}">
                             <i class="mdi mdi-forum-outline"></i>
                             <span> My Activity </span>
-                        </a>
-                    </li>
-    
-                    <li>
-                        <a href="apps-chat.html">
-                            <i class="mdi mdi-forum-outline"></i>
-                            <span> Applicant </span>
                         </a>
                     </li>
                 </ul>

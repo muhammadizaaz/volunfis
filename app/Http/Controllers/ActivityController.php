@@ -4,13 +4,19 @@ namespace App\Http\Controllers;
 
 use App\Models\Activity;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class ActivityController extends Controller
 {
     public function index()
-    {
+    {   
+
         $activities = Activity::latest()->paginate(5);
-        return view('lecturer.activities.index', compact('activities'));
+        if (Auth::user()->hasRole('lecturer')) {
+            return view('lecturer.activities.index', compact('activities'));
+        } elseif (Auth::user()->hasRole('student')) {
+            return view('student.activities.index', compact('activities'));
+        }
     }
 
     public function create()
@@ -33,8 +39,12 @@ class ActivityController extends Controller
 
         Activity::create($request->all());
 
-        return redirect()->route('lecturer.activities.index')
-            ->with('success', 'Activity created successfully.');
+        return back()->with('success', 'Activity created successfully.');
+    }
+
+    public function edit()
+    {
+        return view('lecturer.activities.edit');
     }
 
     public function update(Request $request, Activity $activity)
@@ -52,7 +62,7 @@ class ActivityController extends Controller
 
         $activity->update($request->all());
 
-        return redirect()->route('lecturer.activities.index')
+        return redirect()->route('lecturer.my-activity')
             ->with('success', 'Activity updated successfully');
     }
 
@@ -60,7 +70,7 @@ class ActivityController extends Controller
     {
         $activity->delete();
 
-        return redirect()->route('lecturer.activities.index')
+        return redirect()->route('lecturer.my-activity')
             ->with('success', 'Activity deleted successfully');
     }
 

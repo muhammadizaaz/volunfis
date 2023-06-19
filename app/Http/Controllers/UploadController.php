@@ -10,12 +10,12 @@ class UploadController extends Controller
     public function index()
     {
         $uploads = Upload::latest()->paginate(5);
-        return view('uploads.index', compact('uploads'));
+        return view('student.uploads.index', compact('uploads'));
     }
 
     public function create()
     {
-        return view('uploads.create');
+        return view('student.uploads.create');
     }
     
     public function store(Request $request)

@@ -107,7 +107,7 @@
                                             form of compensation. Community service can be distinct from volunteering, since
                                             it is not always performed on a voluntary basis and may be compulsory.</p>
                                         <div class="mt-4">
-                                            <a href="#" class="btn btn-custom">Activity List <i
+                                            <a href="/activity-list" class="btn btn-custom">Activity List <i
                                                     class="mdi mdi-arrow-right ms-1"></i></a>
                                         </div>
                                     </div>
@@ -138,7 +138,7 @@
                                             analysis of previous research to the extent that it leads to new and creative
                                             outcomes.</p>
                                         <div class="mt-4">
-                                            <a href="#" class="btn btn-custom">Activity List<i
+                                            <a href="/activity-list" class="btn btn-custom">Activity List<i
                                                     class="mdi mdi-arrow-right ms-1"></i></a>
                                         </div>
                                     </div>
@@ -168,7 +168,7 @@
                                             academic subjects at a level above that of a typical classroom setting or
                                             standardized testing.</p>
                                         <div class="mt-4">
-                                            <a href="#" class="btn btn-custom">Activity List<i
+                                            <a href="/activity-list" class="btn btn-custom">Activity List<i
                                                     class="mdi mdi-arrow-right ms-1"></i></a>
                                         </div>
                                     </div>

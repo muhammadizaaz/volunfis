@@ -75,7 +75,7 @@
                 <div class="dropdown-divider"></div>
 
                 <!-- item-->
-                <a href="auth-logout.html" class="dropdown-item notify-item">
+                <a href="/logout" class="dropdown-item notify-item">
                     <i class="fe-log-out"></i>
                     <span>Logout</span>
                 </a>
@@ -86,7 +86,7 @@
 
     <!-- LOGO -->
     <div class="logo-box">
-        <a href="index.html" class="logo logo-light text-center">
+        <a href="/" class="logo logo-light text-center">
             <span class="logo-sm">
                 <img src="{{ asset('template') }}/images/logo-img.png" alt="" height="36">
             </span>
@@ -94,7 +94,7 @@
                 <img src="{{ asset('template') }}/images/logo-dark-img.png" alt="" height="36">
             </span>
         </a>
-        <a href="index.html" class="logo logo-dark text-center">
+        <a href="/" class="logo logo-dark text-center">
             <span class="logo-sm">
                 <img src="{{ asset('template') }}/images/logo-img.png" alt="" height="36">
             </span>

@@ -106,7 +106,7 @@
                                 4. Baik hati<br />
                             </p>
                             <div class="watch-video mt-5 text-center">
-                                <a href="#" class="btn btn-custom me-4">Apply Now<i
+                                <a href="{{ route('student.upload-file')}}" class="btn btn-custom me-4">Apply Now<i
                                         class="mdi mdi-chevron-right ms-1"></i></a>
                             </div>
                         </div>
